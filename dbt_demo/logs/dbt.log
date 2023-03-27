@@ -1,0 +1,170 @@
+
+
+============================== 2023-03-24 14:19:16.639639 | 82dd8a3b-0976-405d-9bd0-217cbf084686 ==============================
+[0m14:19:16.639639 [info ] [MainThread]: Running with dbt=1.4.5
+[0m14:19:16.640651 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'my_dbt_demo', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m14:19:16.640651 [debug] [MainThread]: Tracking: tracking
+[0m14:19:16.651639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224713B0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224713B0C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224713B3F10>]}
+[0m14:19:16.654646 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\M66C186\.dbt
+[0m14:19:16.655639 [debug] [MainThread]: Starter project path: C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\include\starter_project
+[0m15:04:27.692674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022410ABCAC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022410ABDB40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022410ABDB10>]}
+[0m15:04:27.692674 [debug] [MainThread]: Flushing usage events
+[0m15:04:28.134454 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:04:28.134454 [error] [MainThread]: Encountered an error:
+
+[0m15:04:28.161455 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\main.py", line 253, in run_from_args
+    results = task.run()
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\task\init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-03-27 07:43:06.875638 | 32a0d288-2776-4069-a36f-f95d96a4503b ==============================
+[0m07:43:06.875638 [info ] [MainThread]: Running with dbt=1.4.5
+[0m07:43:06.877015 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'my_dbt_demo', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m07:43:06.877015 [debug] [MainThread]: Tracking: tracking
+[0m07:43:06.887817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BADA4B0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BADA4B0C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BADA4B3EE0>]}
+[0m07:43:06.888801 [info ] [MainThread]: A project called my_dbt_demo already exists here.
+[0m07:43:06.889780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BADA4B26E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BADA4B02B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BADA4B3310>]}
+[0m07:43:06.889780 [debug] [MainThread]: Flushing usage events
+[0m07:43:07.409711 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+
+
+============================== 2023-03-27 07:43:33.228303 | a733afdc-5534-4455-8120-2e48d7dc6f86 ==============================
+[0m07:43:33.228303 [info ] [MainThread]: Running with dbt=1.4.5
+[0m07:43:33.229302 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'tst_dbt', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m07:43:33.229302 [debug] [MainThread]: Tracking: tracking
+[0m07:43:33.241304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177D2ED0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177D2ED0CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177D2ED3F70>]}
+[0m07:43:33.242313 [debug] [MainThread]: Starter project path: C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\include\starter_project
+[0m07:46:28.868049 [info ] [MainThread]: Profile tst_dbt written to C:\Users\M66C186\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m07:46:28.869007 [info ] [MainThread]: 
+Your new dbt project "tst_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:46:28.869007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177D2ED3F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177D2ED2B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177D2ED2CB0>]}
+[0m07:46:28.869999 [debug] [MainThread]: Flushing usage events
+[0m07:46:29.294350 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+
+
+============================== 2023-03-27 07:47:46.315669 | a52d0cd8-a6c9-4633-890a-91a9587bf921 ==============================
+[0m07:47:46.315669 [info ] [MainThread]: Running with dbt=1.4.5
+[0m07:47:46.317668 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m07:47:46.317668 [debug] [MainThread]: Tracking: tracking
+[0m07:47:46.328668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022998D90430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022998D90C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022998D93F40>]}
+[0m07:47:49.923604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022998D90100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022998D93E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022998D92EF0>]}
+[0m07:47:49.924552 [debug] [MainThread]: Flushing usage events
+[0m07:47:50.362199 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m07:47:50.362199 [error] [MainThread]: Encountered an error:
+
+[0m07:47:50.388363 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\main.py", line 253, in run_from_args
+    results = task.run()
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\task\init.py", line 286, in run
+    project_name = self.get_valid_project_name()
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\dbt\task\init.py", line 243, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\M66C186\.virtualenvs\dbt_demo-tVTTTiA8\lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-03-27 07:48:22.358884 | fa0cf4af-46c7-4ca0-8b2b-c26476f490d7 ==============================
+[0m07:48:22.358884 [info ] [MainThread]: Running with dbt=1.4.5
+[0m07:48:22.359884 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': True, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m07:48:22.360886 [debug] [MainThread]: Tracking: tracking
+[0m07:48:22.371876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B25360430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B25360BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B25363EB0>]}
+[0m07:48:22.371876 [info ] [MainThread]: To view your profiles.yml file, run:
+
+start C:\Users\M66C186\.dbt
+[0m07:48:22.372877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B25360430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B25363EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B253632E0>]}
+[0m07:48:22.372877 [debug] [MainThread]: Flushing usage events
+[0m07:48:22.457479 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+
+
+============================== 2023-03-27 07:49:55.860427 | a9ed3243-57f9-4704-bbf5-e5492be5a0e7 ==============================
+[0m07:49:55.860427 [info ] [MainThread]: Running with dbt=1.4.5
+[0m07:49:55.862426 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m07:49:55.862426 [debug] [MainThread]: Tracking: tracking
+[0m07:49:55.875426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFA11A0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFA11A0CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFA11A3F70>]}
+[0m07:49:56.396480 [debug] [MainThread]: Executing "git --help"
+[0m07:49:56.455640 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:49:56.455640 [debug] [MainThread]: STDERR: "b''"
+[0m07:49:56.464638 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m07:49:56.465639 [debug] [MainThread]: Using databricks connection "debug"
+[0m07:49:56.466638 [debug] [MainThread]: On debug: select 1 as id
+[0m07:49:56.466638 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:49:56.599118 [debug] [MainThread]: Databricks adapter: <class 'databricks.sql.exc.RequestError'>: Error during request to server
+[0m07:49:56.599118 [debug] [MainThread]: Databricks adapter: attempt: 1/30
+[0m07:49:56.599118 [debug] [MainThread]: Databricks adapter: bounded-retry-delay: None
+[0m07:49:56.600117 [debug] [MainThread]: Databricks adapter: elapsed-seconds: 0.12348651885986328/900.0
+[0m07:49:56.600117 [debug] [MainThread]: Databricks adapter: error-message: 
+[0m07:49:56.600117 [debug] [MainThread]: Databricks adapter: http-code: 400
+[0m07:49:56.600117 [debug] [MainThread]: Databricks adapter: method: OpenSession
+[0m07:49:56.600117 [debug] [MainThread]: Databricks adapter: no-retry-reason: non-retryable error
+[0m07:49:56.601116 [debug] [MainThread]: Databricks adapter: original-exception: 
+[0m07:49:56.601116 [debug] [MainThread]: Databricks adapter: query-id: None
+[0m07:49:56.601116 [debug] [MainThread]: Databricks adapter: session-id: None
+[0m07:49:56.601116 [debug] [MainThread]: Databricks adapter: Error while running:
+select 1 as id
+[0m07:49:56.602115 [debug] [MainThread]: Databricks adapter: Database Error
+  Error during request to server
+[0m07:49:56.602115 [debug] [MainThread]: On debug: No close available on handle
+[0m07:49:56.610117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC08B2B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC08B0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFC08B2F20>]}
+[0m07:49:56.611118 [debug] [MainThread]: Flushing usage events
+[0m07:49:57.033614 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m07:49:57.034614 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-03-27 07:52:42.403332 | e99a4111-ad57-4101-9d3d-e965a2f3a310 ==============================
+[0m07:52:42.403332 [info ] [MainThread]: Running with dbt=1.4.5
+[0m07:52:42.405332 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m07:52:42.405332 [debug] [MainThread]: Tracking: tracking
+[0m07:52:42.416328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BCE20430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BCE20C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BCE23F40>]}
+[0m07:52:42.902598 [debug] [MainThread]: Executing "git --help"
+[0m07:52:42.939575 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:52:42.939575 [debug] [MainThread]: STDERR: "b''"
+[0m07:52:42.949572 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m07:52:42.950572 [debug] [MainThread]: Using databricks connection "debug"
+[0m07:52:42.950572 [debug] [MainThread]: On debug: select 1 as id
+[0m07:52:42.950572 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:52:45.223636 [debug] [MainThread]: SQL status: OK in 2.27 seconds
+[0m07:52:45.224636 [debug] [MainThread]: On debug: Close
+[0m07:52:45.665106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221DC5432E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221DC5405E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221DC5411B0>]}
+[0m07:52:45.666114 [debug] [MainThread]: Flushing usage events
+[0m07:52:46.089162 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m07:52:46.090172 [debug] [MainThread]: Connection 'debug' was properly closed.

@@ -1,0 +1,1263 @@
+
+
+============================== 2023-03-27 07:53:52.401147 | 91073b09-3cc0-4d28-b59f-b7101b1d661f ==============================
+[0m07:53:52.401147 [info ] [MainThread]: Running with dbt=1.4.5
+[0m07:53:52.403147 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m07:53:52.403147 [debug] [MainThread]: Tracking: tracking
+[0m07:53:52.415143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB0E4F0430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB0E4F0BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB0E4F3EB0>]}
+[0m07:53:52.915102 [debug] [MainThread]: Executing "git --help"
+[0m07:53:52.949351 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:53:52.949351 [debug] [MainThread]: STDERR: "b''"
+[0m07:53:52.960354 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m07:53:52.961349 [debug] [MainThread]: Using databricks connection "debug"
+[0m07:53:52.962352 [debug] [MainThread]: On debug: select 1 as id
+[0m07:53:52.962352 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:53:53.657041 [debug] [MainThread]: SQL status: OK in 0.69 seconds
+[0m07:53:53.658045 [debug] [MainThread]: On debug: Close
+[0m07:53:53.827526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB2DC2AF20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB2DC2ABC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB2DC28B50>]}
+[0m07:53:53.827526 [debug] [MainThread]: Flushing usage events
+[0m07:53:53.979774 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m07:53:53.981090 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-03-27 08:24:07.585587 | 3b4a5e1f-38dc-4f75-a12b-625fe5eca078 ==============================
+[0m08:24:07.585587 [info ] [MainThread]: Running with dbt=1.4.5
+[0m08:24:07.587587 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['models/products_only_3.sql', 'models/products_color.sql', 'models/products_avg.sql'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:24:07.587587 [debug] [MainThread]: Tracking: tracking
+[0m08:24:07.599590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F848A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F84BBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F84B3D0>]}
+[0m08:24:07.615587 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m08:24:07.616586 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:24:07.616586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3b4a5e1f-38dc-4f75-a12b-625fe5eca078', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F82B700>]}
+[0m08:24:08.703652 [debug] [MainThread]: 1699: static parser successfully parsed products_avg.sql
+[0m08:24:08.712652 [debug] [MainThread]: 1699: static parser successfully parsed products_color.sql
+[0m08:24:08.715652 [debug] [MainThread]: 1699: static parser successfully parsed products_only_3.sql
+[0m08:24:08.717653 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m08:24:08.719655 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m08:24:08.767652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3b4a5e1f-38dc-4f75-a12b-625fe5eca078', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6FA66C20>]}
+[0m08:24:08.774648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3b4a5e1f-38dc-4f75-a12b-625fe5eca078', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F8287C0>]}
+[0m08:24:08.775648 [info ] [MainThread]: Found 5 models, 4 tests, 0 snapshots, 0 analyses, 374 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m08:24:08.775648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b4a5e1f-38dc-4f75-a12b-625fe5eca078', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F84A290>]}
+[0m08:24:08.777654 [info ] [MainThread]: 
+[0m08:24:08.779644 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:24:08.781645 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m08:24:08.789653 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m08:24:08.789653 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m08:24:08.790645 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:24:09.549010 [debug] [ThreadPool]: SQL status: OK in 0.76 seconds
+[0m08:24:09.558009 [debug] [ThreadPool]: On list_schemas: Close
+[0m08:24:09.850243 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_main_db'
+[0m08:24:09.858250 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m08:24:09.858250 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:24:09.858250 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show tables in `main_db`
+  
+[0m08:24:09.859254 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:24:10.417658 [debug] [ThreadPool]: SQL status: OK in 0.56 seconds
+[0m08:24:10.424658 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:24:10.425658 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show views in `main_db`
+  
+[0m08:24:10.798504 [debug] [ThreadPool]: SQL status: OK in 0.37 seconds
+[0m08:24:10.801513 [debug] [ThreadPool]: On list_None_main_db: ROLLBACK
+[0m08:24:10.801513 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m08:24:10.802512 [debug] [ThreadPool]: On list_None_main_db: Close
+[0m08:24:10.967043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3b4a5e1f-38dc-4f75-a12b-625fe5eca078', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F9F5A50>]}
+[0m08:24:10.967043 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:24:10.967043 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:24:10.968052 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:24:10.968052 [info ] [MainThread]: 
+[0m08:24:11.009209 [debug] [Thread-1 (]: Began running node model.tst_dbt.products_only_3
+[0m08:24:11.010170 [info ] [Thread-1 (]: 1 of 3 START sql table model main_db.products_only_3 ........................... [RUN]
+[0m08:24:11.011142 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.tst_dbt.products_only_3'
+[0m08:24:11.011142 [debug] [Thread-1 (]: Began compiling node model.tst_dbt.products_only_3
+[0m08:24:11.014128 [debug] [Thread-1 (]: Writing injected SQL for node "model.tst_dbt.products_only_3"
+[0m08:24:11.016130 [debug] [Thread-1 (]: Timing info for model.tst_dbt.products_only_3 (compile): 2023-03-27 08:24:11.011142 => 2023-03-27 08:24:11.016130
+[0m08:24:11.016130 [debug] [Thread-1 (]: Began executing node model.tst_dbt.products_only_3
+[0m08:24:11.053128 [debug] [Thread-1 (]: Writing runtime sql for node "model.tst_dbt.products_only_3"
+[0m08:24:11.055142 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m08:24:11.055142 [debug] [Thread-1 (]: Using databricks connection "model.tst_dbt.products_only_3"
+[0m08:24:11.056136 [debug] [Thread-1 (]: On model.tst_dbt.products_only_3: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.products_only_3"} */
+
+  
+    
+        create or replace table `main_db`.`products_only_3`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      
+
+SELECT PRODUCT_NAME, COLOR, PRICE FROM main_db.products
+  
+[0m08:24:11.056136 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m08:24:14.787849 [debug] [Thread-1 (]: SQL status: OK in 3.73 seconds
+[0m08:24:14.802851 [debug] [Thread-1 (]: Timing info for model.tst_dbt.products_only_3 (execute): 2023-03-27 08:24:11.017138 => 2023-03-27 08:24:14.802851
+[0m08:24:14.802851 [debug] [Thread-1 (]: On model.tst_dbt.products_only_3: ROLLBACK
+[0m08:24:14.803849 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m08:24:14.803849 [debug] [Thread-1 (]: On model.tst_dbt.products_only_3: Close
+[0m08:24:15.072016 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b4a5e1f-38dc-4f75-a12b-625fe5eca078', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B70B74E80>]}
+[0m08:24:15.072016 [info ] [Thread-1 (]: 1 of 3 OK created sql table model main_db.products_only_3 ...................... [[32mOK[0m in 4.06s]
+[0m08:24:15.074016 [debug] [Thread-1 (]: Finished running node model.tst_dbt.products_only_3
+[0m08:24:15.075023 [debug] [Thread-1 (]: Began running node model.tst_dbt.products_avg
+[0m08:24:15.075023 [info ] [Thread-1 (]: 2 of 3 START sql view model main_db.products_avg ............................... [RUN]
+[0m08:24:15.076015 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.tst_dbt.products_avg'
+[0m08:24:15.076015 [debug] [Thread-1 (]: Began compiling node model.tst_dbt.products_avg
+[0m08:24:15.079022 [debug] [Thread-1 (]: Writing injected SQL for node "model.tst_dbt.products_avg"
+[0m08:24:15.079022 [debug] [Thread-1 (]: Timing info for model.tst_dbt.products_avg (compile): 2023-03-27 08:24:15.077032 => 2023-03-27 08:24:15.079022
+[0m08:24:15.080016 [debug] [Thread-1 (]: Began executing node model.tst_dbt.products_avg
+[0m08:24:15.090654 [debug] [Thread-1 (]: Writing runtime sql for node "model.tst_dbt.products_avg"
+[0m08:24:15.091641 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m08:24:15.092641 [debug] [Thread-1 (]: Using databricks connection "model.tst_dbt.products_avg"
+[0m08:24:15.092641 [debug] [Thread-1 (]: On model.tst_dbt.products_avg: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.products_avg"} */
+create or replace view `main_db`.`products_avg`
+  
+  
+  as
+    SELECT COLOR, AVG(PRICE) AS AVG_PRICE
+FROM `main_db`.`products_only_3` 
+GROUP BY COLOR
+ORDER BY AVG_PRICE
+
+[0m08:24:15.092641 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:24:16.050973 [debug] [Thread-1 (]: SQL status: OK in 0.96 seconds
+[0m08:24:16.052974 [debug] [Thread-1 (]: Timing info for model.tst_dbt.products_avg (execute): 2023-03-27 08:24:15.080016 => 2023-03-27 08:24:16.052974
+[0m08:24:16.052974 [debug] [Thread-1 (]: On model.tst_dbt.products_avg: ROLLBACK
+[0m08:24:16.053965 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m08:24:16.053965 [debug] [Thread-1 (]: On model.tst_dbt.products_avg: Close
+[0m08:24:16.245050 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b4a5e1f-38dc-4f75-a12b-625fe5eca078', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B70B0B5E0>]}
+[0m08:24:16.246028 [info ] [Thread-1 (]: 2 of 3 OK created sql view model main_db.products_avg .......................... [[32mOK[0m in 1.17s]
+[0m08:24:16.246967 [debug] [Thread-1 (]: Finished running node model.tst_dbt.products_avg
+[0m08:24:16.246967 [debug] [Thread-1 (]: Began running node model.tst_dbt.products_color
+[0m08:24:16.248030 [info ] [Thread-1 (]: 3 of 3 START sql view model main_db.products_color ............................. [RUN]
+[0m08:24:16.248973 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.tst_dbt.products_color'
+[0m08:24:16.248973 [debug] [Thread-1 (]: Began compiling node model.tst_dbt.products_color
+[0m08:24:16.250975 [debug] [Thread-1 (]: Writing injected SQL for node "model.tst_dbt.products_color"
+[0m08:24:16.253983 [debug] [Thread-1 (]: Timing info for model.tst_dbt.products_color (compile): 2023-03-27 08:24:16.249974 => 2023-03-27 08:24:16.253983
+[0m08:24:16.254966 [debug] [Thread-1 (]: Began executing node model.tst_dbt.products_color
+[0m08:24:16.258972 [debug] [Thread-1 (]: Writing runtime sql for node "model.tst_dbt.products_color"
+[0m08:24:16.259965 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m08:24:16.259965 [debug] [Thread-1 (]: Using databricks connection "model.tst_dbt.products_color"
+[0m08:24:16.259965 [debug] [Thread-1 (]: On model.tst_dbt.products_color: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.products_color"} */
+create or replace view `main_db`.`products_color`
+  
+  
+  as
+    SELECT COLOR
+FROM `main_db`.`products_only_3` 
+SORT BY COLOR ASC
+
+[0m08:24:16.259965 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:24:17.055322 [debug] [Thread-1 (]: SQL status: OK in 0.8 seconds
+[0m08:24:17.057334 [debug] [Thread-1 (]: Timing info for model.tst_dbt.products_color (execute): 2023-03-27 08:24:16.254966 => 2023-03-27 08:24:17.057334
+[0m08:24:17.057334 [debug] [Thread-1 (]: On model.tst_dbt.products_color: ROLLBACK
+[0m08:24:17.057334 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m08:24:17.058322 [debug] [Thread-1 (]: On model.tst_dbt.products_color: Close
+[0m08:24:17.202811 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b4a5e1f-38dc-4f75-a12b-625fe5eca078', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B70B9AF50>]}
+[0m08:24:17.203803 [info ] [Thread-1 (]: 3 of 3 OK created sql view model main_db.products_color ........................ [[32mOK[0m in 0.95s]
+[0m08:24:17.204702 [debug] [Thread-1 (]: Finished running node model.tst_dbt.products_color
+[0m08:24:17.205710 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:24:17.206722 [debug] [MainThread]: On master: ROLLBACK
+[0m08:24:17.206722 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:24:17.440720 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:24:17.440720 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:24:17.441711 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:24:17.441711 [debug] [MainThread]: On master: ROLLBACK
+[0m08:24:17.441711 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:24:17.441711 [debug] [MainThread]: On master: Close
+[0m08:24:17.609026 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:24:17.609026 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m08:24:17.610060 [debug] [MainThread]: Connection 'list_None_main_db' was properly closed.
+[0m08:24:17.610560 [debug] [MainThread]: Connection 'model.tst_dbt.products_color' was properly closed.
+[0m08:24:17.610560 [info ] [MainThread]: 
+[0m08:24:17.611577 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 8.83 seconds (8.83s).
+[0m08:24:17.612576 [debug] [MainThread]: Command end result
+[0m08:24:17.618578 [info ] [MainThread]: 
+[0m08:24:17.618578 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:24:17.618578 [info ] [MainThread]: 
+[0m08:24:17.619580 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m08:24:17.619580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F848A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B6F9F7AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B70B6FD00>]}
+[0m08:24:17.620657 [debug] [MainThread]: Flushing usage events
+[0m08:24:22.185094 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+
+
+============================== 2023-03-27 08:34:07.983121 | 5f72a0b2-6bda-4d77-a400-91ebc7493e10 ==============================
+[0m08:34:07.983121 [info ] [MainThread]: Running with dbt=1.4.5
+[0m08:34:07.984121 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['models/zzz_game_details.sql', 'models/zzz_win_loss_records.sql'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:34:07.984121 [debug] [MainThread]: Tracking: tracking
+[0m08:34:07.996120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D528B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D52BFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D52BBB0>]}
+[0m08:34:08.012121 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m08:34:08.545709 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m08:34:08.546781 [debug] [MainThread]: Partial parsing: added file: tst_dbt://models\zzz_win_loss_records.sql
+[0m08:34:08.546781 [debug] [MainThread]: Partial parsing: added file: tst_dbt://models\zzz_game_details.sql
+[0m08:34:08.556711 [debug] [MainThread]: 1699: static parser successfully parsed zzz_win_loss_records.sql
+[0m08:34:08.570716 [debug] [MainThread]: 1699: static parser successfully parsed zzz_game_details.sql
+[0m08:34:08.579716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5f72a0b2-6bda-4d77-a400-91ebc7493e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D759AE0>]}
+[0m08:34:08.586095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5f72a0b2-6bda-4d77-a400-91ebc7493e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D70E890>]}
+[0m08:34:08.586095 [info ] [MainThread]: Found 7 models, 4 tests, 0 snapshots, 0 analyses, 374 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m08:34:08.586607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5f72a0b2-6bda-4d77-a400-91ebc7493e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025FFB918BB0>]}
+[0m08:34:08.587626 [info ] [MainThread]: 
+[0m08:34:08.589892 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:34:08.590921 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m08:34:08.597791 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m08:34:08.598792 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m08:34:08.598792 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:34:09.185587 [debug] [ThreadPool]: SQL status: OK in 0.59 seconds
+[0m08:34:09.190578 [debug] [ThreadPool]: On list_schemas: Close
+[0m08:34:09.401209 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_main_db'
+[0m08:34:09.408210 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m08:34:09.408210 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:34:09.408210 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show tables in `main_db`
+  
+[0m08:34:09.408210 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:34:09.846002 [debug] [ThreadPool]: SQL status: OK in 0.44 seconds
+[0m08:34:09.851982 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:34:09.852982 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show views in `main_db`
+  
+[0m08:34:10.280390 [debug] [ThreadPool]: SQL status: OK in 0.43 seconds
+[0m08:34:10.283386 [debug] [ThreadPool]: On list_None_main_db: ROLLBACK
+[0m08:34:10.283386 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m08:34:10.283386 [debug] [ThreadPool]: On list_None_main_db: Close
+[0m08:34:10.430481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5f72a0b2-6bda-4d77-a400-91ebc7493e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D73EB30>]}
+[0m08:34:10.430481 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:34:10.430481 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:34:10.431473 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:34:10.431473 [info ] [MainThread]: 
+[0m08:34:10.467473 [debug] [Thread-1 (]: Began running node model.tst_dbt.zzz_game_details
+[0m08:34:10.467473 [info ] [Thread-1 (]: 1 of 2 START sql table model main_db.zzz_game_details .......................... [RUN]
+[0m08:34:10.468474 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.tst_dbt.zzz_game_details'
+[0m08:34:10.469475 [debug] [Thread-1 (]: Began compiling node model.tst_dbt.zzz_game_details
+[0m08:34:10.471474 [debug] [Thread-1 (]: Writing injected SQL for node "model.tst_dbt.zzz_game_details"
+[0m08:34:10.472490 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_game_details (compile): 2023-03-27 08:34:10.469475 => 2023-03-27 08:34:10.472490
+[0m08:34:10.472490 [debug] [Thread-1 (]: Began executing node model.tst_dbt.zzz_game_details
+[0m08:34:10.513510 [debug] [Thread-1 (]: Writing runtime sql for node "model.tst_dbt.zzz_game_details"
+[0m08:34:10.514474 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m08:34:10.514474 [debug] [Thread-1 (]: Using databricks connection "model.tst_dbt.zzz_game_details"
+[0m08:34:10.515473 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.zzz_game_details"} */
+
+  
+    
+        create or replace table `main_db`.`zzz_game_details`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      -- Create a table that provides full details for each game, including
+-- the game ID, the home and visiting teams' city names and scores,
+-- the game winner's city name, and the game date.
+
+
+
+-- Step 4 of 4: Replace the visitor team IDs with their city names.
+select
+  game_id,
+  home,
+  t.team_city as visitor,
+  home_score,
+  visitor_score,
+  -- Step 3 of 4: Display the city name for each game's winner.
+  case
+    when
+      home_score > visitor_score
+        then
+          home
+    when
+      visitor_score > home_score
+        then
+          t.team_city
+  end as winner,
+  game_date as date
+from (
+  -- Step 2 of 4: Replace the home team IDs with their actual city names.
+  select
+    game_id,
+    t.team_city as home,
+    home_score,
+    visitor_team_id,
+    visitor_score,
+    game_date
+  from (
+    -- Step 1 of 4: Combine data from various tables (for example, game and team IDs, scores, dates).
+    select
+      g.game_id,
+      go.home_team_id,
+      gs.home_team_score as home_score,
+      go.visitor_team_id,
+      gs.visitor_team_score as visitor_score,
+      g.game_date
+    from
+      zzz_games as g,
+      zzz_game_opponents as go,
+      zzz_game_scores as gs
+    where
+      g.game_id = go.game_id and
+      g.game_id = gs.game_id
+  ) as all_ids,
+    zzz_teams as t
+  where
+    all_ids.home_team_id = t.team_id
+) as visitor_ids,
+  zzz_teams as t
+where
+  visitor_ids.visitor_team_id = t.team_id
+order by game_date desc
+  
+[0m08:34:10.515473 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m08:34:11.118699 [debug] [Thread-1 (]: Databricks adapter: Error while running:
+/* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.zzz_game_details"} */
+
+  
+    
+        create or replace table `main_db`.`zzz_game_details`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      -- Create a table that provides full details for each game, including
+-- the game ID, the home and visiting teams' city names and scores,
+-- the game winner's city name, and the game date.
+
+
+
+-- Step 4 of 4: Replace the visitor team IDs with their city names.
+select
+  game_id,
+  home,
+  t.team_city as visitor,
+  home_score,
+  visitor_score,
+  -- Step 3 of 4: Display the city name for each game's winner.
+  case
+    when
+      home_score > visitor_score
+        then
+          home
+    when
+      visitor_score > home_score
+        then
+          t.team_city
+  end as winner,
+  game_date as date
+from (
+  -- Step 2 of 4: Replace the home team IDs with their actual city names.
+  select
+    game_id,
+    t.team_city as home,
+    home_score,
+    visitor_team_id,
+    visitor_score,
+    game_date
+  from (
+    -- Step 1 of 4: Combine data from various tables (for example, game and team IDs, scores, dates).
+    select
+      g.game_id,
+      go.home_team_id,
+      gs.home_team_score as home_score,
+      go.visitor_team_id,
+      gs.visitor_team_score as visitor_score,
+      g.game_date
+    from
+      zzz_games as g,
+      zzz_game_opponents as go,
+      zzz_game_scores as gs
+    where
+      g.game_id = go.game_id and
+      g.game_id = gs.game_id
+  ) as all_ids,
+    zzz_teams as t
+  where
+    all_ids.home_team_id = t.team_id
+) as visitor_ids,
+  zzz_teams as t
+where
+  visitor_ids.visitor_team_id = t.team_id
+order by game_date desc
+  
+[0m08:34:11.119702 [debug] [Thread-1 (]: Databricks adapter: <class 'databricks.sql.exc.ServerOperationError'>: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_games` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 60 pos 6
+[0m08:34:11.119702 [debug] [Thread-1 (]: Databricks adapter: diagnostic-info: org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.AnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_games` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 60 pos 6
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:591)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.unity.EmptyHandle$.runWith(UCSHandle.scala:124)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:490)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:359)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:149)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:49)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:60)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:337)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:322)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:371)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.spark.sql.AnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_games` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 60 pos 6
+	at org.apache.spark.sql.AnalysisException.copy(AnalysisException.scala:111)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:575)
+	... 19 more
+
+[0m08:34:11.119702 [debug] [Thread-1 (]: Databricks adapter: operation-id: b'1\xf4\x94~\x05\tA\x1e\xba*\x16\x1bb\x82\xc9\xe7'
+[0m08:34:11.120692 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_game_details (execute): 2023-03-27 08:34:10.472490 => 2023-03-27 08:34:11.120692
+[0m08:34:11.120692 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: ROLLBACK
+[0m08:34:11.120692 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m08:34:11.121692 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: Close
+[0m08:34:11.380369 [debug] [Thread-1 (]: Runtime Error in model zzz_game_details (models\zzz_game_details.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_games` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 60 pos 6
+[0m08:34:11.381303 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5f72a0b2-6bda-4d77-a400-91ebc7493e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D759B40>]}
+[0m08:34:11.382303 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model main_db.zzz_game_details ................. [[31mERROR[0m in 0.91s]
+[0m08:34:11.383316 [debug] [Thread-1 (]: Finished running node model.tst_dbt.zzz_game_details
+[0m08:34:11.384302 [debug] [Thread-1 (]: Began running node model.tst_dbt.zzz_win_loss_records
+[0m08:34:11.384302 [info ] [Thread-1 (]: 2 of 2 SKIP relation main_db.zzz_win_loss_records .............................. [[33mSKIP[0m]
+[0m08:34:11.385302 [debug] [Thread-1 (]: Finished running node model.tst_dbt.zzz_win_loss_records
+[0m08:34:11.386302 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:34:11.386302 [debug] [MainThread]: On master: ROLLBACK
+[0m08:34:11.386302 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:34:11.588187 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:34:11.589194 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:34:11.589194 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:34:11.589194 [debug] [MainThread]: On master: ROLLBACK
+[0m08:34:11.589194 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:34:11.590192 [debug] [MainThread]: On master: Close
+[0m08:34:11.739623 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:34:11.740613 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m08:34:11.740613 [debug] [MainThread]: Connection 'list_None_main_db' was properly closed.
+[0m08:34:11.741613 [debug] [MainThread]: Connection 'model.tst_dbt.zzz_game_details' was properly closed.
+[0m08:34:11.741613 [info ] [MainThread]: 
+[0m08:34:11.742622 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 3.15 seconds (3.15s).
+[0m08:34:11.743624 [debug] [MainThread]: Command end result
+[0m08:34:11.749622 [info ] [MainThread]: 
+[0m08:34:11.749622 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m08:34:11.750614 [info ] [MainThread]: 
+[0m08:34:11.750614 [error] [MainThread]: [33mRuntime Error in model zzz_game_details (models\zzz_game_details.sql)[0m
+[0m08:34:11.751613 [error] [MainThread]:   [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_games` cannot be found. Verify the spelling and correctness of the schema and catalog.
+[0m08:34:11.751613 [error] [MainThread]:   If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+[0m08:34:11.752613 [error] [MainThread]:   To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 60 pos 6
+[0m08:34:11.752613 [info ] [MainThread]: 
+[0m08:34:11.752613 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m08:34:11.753613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D73FE20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D787220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025F9D758D90>]}
+[0m08:34:11.753613 [debug] [MainThread]: Flushing usage events
+[0m08:34:12.177280 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+
+
+============================== 2023-03-27 08:35:28.668145 | 1612de23-c441-40a0-a6c7-e69b267e3aa0 ==============================
+[0m08:35:28.668145 [info ] [MainThread]: Running with dbt=1.4.5
+[0m08:35:28.670145 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['models/zzz_game_details.sql', 'models/zzz_win_loss_records.sql'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:35:28.670145 [debug] [MainThread]: Tracking: tracking
+[0m08:35:28.682159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E196038B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19603B370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19603BBE0>]}
+[0m08:35:28.691145 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m08:35:28.747145 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:35:28.748149 [debug] [MainThread]: Partial parsing: updated file: tst_dbt://models\zzz_game_details.sql
+[0m08:35:28.759146 [debug] [MainThread]: 1699: static parser successfully parsed zzz_game_details.sql
+[0m08:35:28.776152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1612de23-c441-40a0-a6c7-e69b267e3aa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E19626DC00>]}
+[0m08:35:28.782145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1612de23-c441-40a0-a6c7-e69b267e3aa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1962165F0>]}
+[0m08:35:28.782145 [info ] [MainThread]: Found 7 models, 4 tests, 0 snapshots, 0 analyses, 374 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m08:35:28.783154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1612de23-c441-40a0-a6c7-e69b267e3aa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1F3C58AF0>]}
+[0m08:35:28.785146 [info ] [MainThread]: 
+[0m08:35:28.786146 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:35:28.788155 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m08:35:28.795152 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m08:35:28.795152 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m08:35:28.796146 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:35:29.370385 [debug] [ThreadPool]: SQL status: OK in 0.57 seconds
+[0m08:35:29.375385 [debug] [ThreadPool]: On list_schemas: Close
+[0m08:35:29.535849 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_main_db'
+[0m08:35:29.543849 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m08:35:29.543849 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:35:29.544850 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show tables in `main_db`
+  
+[0m08:35:29.544850 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:35:29.969888 [debug] [ThreadPool]: SQL status: OK in 0.43 seconds
+[0m08:35:30.012918 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:35:30.013917 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show views in `main_db`
+  
+[0m08:35:30.342931 [debug] [ThreadPool]: SQL status: OK in 0.33 seconds
+[0m08:35:30.346976 [debug] [ThreadPool]: On list_None_main_db: ROLLBACK
+[0m08:35:30.348299 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m08:35:30.348469 [debug] [ThreadPool]: On list_None_main_db: Close
+[0m08:35:30.511985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1612de23-c441-40a0-a6c7-e69b267e3aa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E196296B60>]}
+[0m08:35:30.512920 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:35:30.512920 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:35:30.513921 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:35:30.513921 [info ] [MainThread]: 
+[0m08:35:30.525977 [debug] [Thread-1 (]: Began running node model.tst_dbt.zzz_game_details
+[0m08:35:30.526910 [info ] [Thread-1 (]: 1 of 2 START sql table model main_db.zzz_game_details .......................... [RUN]
+[0m08:35:30.526910 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.tst_dbt.zzz_game_details'
+[0m08:35:30.527918 [debug] [Thread-1 (]: Began compiling node model.tst_dbt.zzz_game_details
+[0m08:35:30.529912 [debug] [Thread-1 (]: Writing injected SQL for node "model.tst_dbt.zzz_game_details"
+[0m08:35:30.530918 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_game_details (compile): 2023-03-27 08:35:30.527918 => 2023-03-27 08:35:30.530918
+[0m08:35:30.530918 [debug] [Thread-1 (]: Began executing node model.tst_dbt.zzz_game_details
+[0m08:35:30.587551 [debug] [Thread-1 (]: Writing runtime sql for node "model.tst_dbt.zzz_game_details"
+[0m08:35:30.589543 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m08:35:30.589543 [debug] [Thread-1 (]: Using databricks connection "model.tst_dbt.zzz_game_details"
+[0m08:35:30.589543 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.zzz_game_details"} */
+
+  
+    
+        create or replace table `main_db`.`zzz_game_details`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      -- Create a table that provides full details for each game, including
+-- the game ID, the home and visiting teams' city names and scores,
+-- the game winner's city name, and the game date.
+
+
+
+-- Step 4 of 4: Replace the visitor team IDs with their city names.
+select
+  game_id,
+  home,
+  t.team_city as visitor,
+  home_score,
+  visitor_score,
+  -- Step 3 of 4: Display the city name for each game's winner.
+  case
+    when
+      home_score > visitor_score
+        then
+          home
+    when
+      visitor_score > home_score
+        then
+          t.team_city
+  end as winner,
+  game_date as date
+from (
+  -- Step 2 of 4: Replace the home team IDs with their actual city names.
+  select
+    game_id,
+    t.team_city as home,
+    home_score,
+    visitor_team_id,
+    visitor_score,
+    game_date
+  from (
+    -- Step 1 of 4: Combine data from various tables (for example, game and team IDs, scores, dates).
+    select
+      g.game_id,
+      go.home_team_id,
+      gs.home_team_score as home_score,
+      go.visitor_team_id,
+      gs.visitor_team_score as visitor_score,
+      g.game_date
+    from
+      main_db.zzz_games as g,
+      main_db.zzz_game_opponents as go,
+      main_db.zzz_game_scores as gs
+    where
+      g.game_id = go.game_id and
+      g.game_id = gs.game_id
+  ) as all_ids,
+    zzz_teams as t
+  where
+    all_ids.home_team_id = t.team_id
+) as visitor_ids,
+  zzz_teams as t
+where
+  visitor_ids.visitor_team_id = t.team_id
+order by game_date desc
+  
+[0m08:35:30.590914 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m08:35:31.181244 [debug] [Thread-1 (]: Databricks adapter: Error while running:
+/* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.zzz_game_details"} */
+
+  
+    
+        create or replace table `main_db`.`zzz_game_details`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      -- Create a table that provides full details for each game, including
+-- the game ID, the home and visiting teams' city names and scores,
+-- the game winner's city name, and the game date.
+
+
+
+-- Step 4 of 4: Replace the visitor team IDs with their city names.
+select
+  game_id,
+  home,
+  t.team_city as visitor,
+  home_score,
+  visitor_score,
+  -- Step 3 of 4: Display the city name for each game's winner.
+  case
+    when
+      home_score > visitor_score
+        then
+          home
+    when
+      visitor_score > home_score
+        then
+          t.team_city
+  end as winner,
+  game_date as date
+from (
+  -- Step 2 of 4: Replace the home team IDs with their actual city names.
+  select
+    game_id,
+    t.team_city as home,
+    home_score,
+    visitor_team_id,
+    visitor_score,
+    game_date
+  from (
+    -- Step 1 of 4: Combine data from various tables (for example, game and team IDs, scores, dates).
+    select
+      g.game_id,
+      go.home_team_id,
+      gs.home_team_score as home_score,
+      go.visitor_team_id,
+      gs.visitor_team_score as visitor_score,
+      g.game_date
+    from
+      main_db.zzz_games as g,
+      main_db.zzz_game_opponents as go,
+      main_db.zzz_game_scores as gs
+    where
+      g.game_id = go.game_id and
+      g.game_id = gs.game_id
+  ) as all_ids,
+    zzz_teams as t
+  where
+    all_ids.home_team_id = t.team_id
+) as visitor_ids,
+  zzz_teams as t
+where
+  visitor_ids.visitor_team_id = t.team_id
+order by game_date desc
+  
+[0m08:35:31.182272 [debug] [Thread-1 (]: Databricks adapter: <class 'databricks.sql.exc.ServerOperationError'>: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 67 pos 4
+[0m08:35:31.182899 [debug] [Thread-1 (]: Databricks adapter: diagnostic-info: org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.AnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 67 pos 4
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:591)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.unity.EmptyHandle$.runWith(UCSHandle.scala:124)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:490)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:359)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:149)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:49)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:60)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:337)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:322)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:371)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.spark.sql.AnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 67 pos 4
+	at org.apache.spark.sql.AnalysisException.copy(AnalysisException.scala:111)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:575)
+	... 19 more
+
+[0m08:35:31.182899 [debug] [Thread-1 (]: Databricks adapter: operation-id: b'S)~\xb9\xa8ZC\x1a\x92\x92\xbe\xd7H\n\xf4\xef'
+[0m08:35:31.183947 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_game_details (execute): 2023-03-27 08:35:30.531917 => 2023-03-27 08:35:31.183947
+[0m08:35:31.183947 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: ROLLBACK
+[0m08:35:31.184852 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m08:35:31.185352 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: Close
+[0m08:35:31.361882 [debug] [Thread-1 (]: Runtime Error in model zzz_game_details (models\zzz_game_details.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 67 pos 4
+[0m08:35:31.362882 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1612de23-c441-40a0-a6c7-e69b267e3aa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1962EEE90>]}
+[0m08:35:31.363884 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model main_db.zzz_game_details ................. [[31mERROR[0m in 0.84s]
+[0m08:35:31.365882 [debug] [Thread-1 (]: Finished running node model.tst_dbt.zzz_game_details
+[0m08:35:31.366364 [debug] [Thread-1 (]: Began running node model.tst_dbt.zzz_win_loss_records
+[0m08:35:31.366364 [info ] [Thread-1 (]: 2 of 2 SKIP relation main_db.zzz_win_loss_records .............................. [[33mSKIP[0m]
+[0m08:35:31.367495 [debug] [Thread-1 (]: Finished running node model.tst_dbt.zzz_win_loss_records
+[0m08:35:31.368494 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:35:31.369509 [debug] [MainThread]: On master: ROLLBACK
+[0m08:35:31.369509 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:35:31.544655 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:35:31.544655 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:35:31.545663 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:35:31.545883 [debug] [MainThread]: On master: ROLLBACK
+[0m08:35:31.546384 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:35:31.546384 [debug] [MainThread]: On master: Close
+[0m08:35:31.717034 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:35:31.717034 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m08:35:31.718030 [debug] [MainThread]: Connection 'list_None_main_db' was properly closed.
+[0m08:35:31.718030 [debug] [MainThread]: Connection 'model.tst_dbt.zzz_game_details' was properly closed.
+[0m08:35:31.719028 [info ] [MainThread]: 
+[0m08:35:31.719028 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 2.93 seconds (2.93s).
+[0m08:35:31.720031 [debug] [MainThread]: Command end result
+[0m08:35:31.727028 [info ] [MainThread]: 
+[0m08:35:31.728030 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m08:35:31.728030 [info ] [MainThread]: 
+[0m08:35:31.729108 [error] [MainThread]: [33mRuntime Error in model zzz_game_details (models\zzz_game_details.sql)[0m
+[0m08:35:31.729607 [error] [MainThread]:   [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+[0m08:35:31.730607 [error] [MainThread]:   If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+[0m08:35:31.730607 [error] [MainThread]:   To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 67 pos 4
+[0m08:35:31.731682 [info ] [MainThread]: 
+[0m08:35:31.733206 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m08:35:31.733206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E196297E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1962939A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1962EDB40>]}
+[0m08:35:31.734203 [debug] [MainThread]: Flushing usage events
+[0m08:35:32.160962 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+
+
+============================== 2023-03-27 08:36:01.126195 | 64c122f6-1111-4d99-9a72-dbcfc977b68c ==============================
+[0m08:36:01.126195 [info ] [MainThread]: Running with dbt=1.4.5
+[0m08:36:01.127195 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['models/zzz_game_details.sql', 'models/zzz_win_loss_records.sql'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:36:01.127195 [debug] [MainThread]: Tracking: tracking
+[0m08:36:01.139188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025982138B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002598213BFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002598213BBB0>]}
+[0m08:36:01.149188 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m08:36:01.206195 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:36:01.206195 [debug] [MainThread]: Partial parsing: updated file: tst_dbt://models\zzz_game_details.sql
+[0m08:36:01.217191 [debug] [MainThread]: 1699: static parser successfully parsed zzz_game_details.sql
+[0m08:36:01.233194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '64c122f6-1111-4d99-9a72-dbcfc977b68c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002598236DBD0>]}
+[0m08:36:01.239194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '64c122f6-1111-4d99-9a72-dbcfc977b68c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025982316140>]}
+[0m08:36:01.240196 [info ] [MainThread]: Found 7 models, 4 tests, 0 snapshots, 0 analyses, 374 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m08:36:01.240196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64c122f6-1111-4d99-9a72-dbcfc977b68c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259E0510BB0>]}
+[0m08:36:01.242196 [info ] [MainThread]: 
+[0m08:36:01.243197 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:36:01.245197 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m08:36:01.252195 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m08:36:01.252195 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m08:36:01.253195 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:36:01.673581 [debug] [ThreadPool]: SQL status: OK in 0.42 seconds
+[0m08:36:01.677574 [debug] [ThreadPool]: On list_schemas: Close
+[0m08:36:01.854633 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_main_db'
+[0m08:36:01.861633 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m08:36:01.861633 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:36:01.861633 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show tables in `main_db`
+  
+[0m08:36:01.861633 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:36:02.268890 [debug] [ThreadPool]: SQL status: OK in 0.41 seconds
+[0m08:36:02.275744 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:36:02.275744 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show views in `main_db`
+  
+[0m08:36:02.577616 [debug] [ThreadPool]: SQL status: OK in 0.3 seconds
+[0m08:36:02.581615 [debug] [ThreadPool]: On list_None_main_db: ROLLBACK
+[0m08:36:02.581615 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m08:36:02.581615 [debug] [ThreadPool]: On list_None_main_db: Close
+[0m08:36:02.739299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64c122f6-1111-4d99-9a72-dbcfc977b68c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025982396B30>]}
+[0m08:36:02.739299 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:36:02.740067 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:36:02.740567 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:36:02.740567 [info ] [MainThread]: 
+[0m08:36:02.755573 [debug] [Thread-1 (]: Began running node model.tst_dbt.zzz_game_details
+[0m08:36:02.755573 [info ] [Thread-1 (]: 1 of 2 START sql table model main_db.zzz_game_details .......................... [RUN]
+[0m08:36:02.756574 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.tst_dbt.zzz_game_details'
+[0m08:36:02.757572 [debug] [Thread-1 (]: Began compiling node model.tst_dbt.zzz_game_details
+[0m08:36:02.759579 [debug] [Thread-1 (]: Writing injected SQL for node "model.tst_dbt.zzz_game_details"
+[0m08:36:02.760571 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_game_details (compile): 2023-03-27 08:36:02.757572 => 2023-03-27 08:36:02.760571
+[0m08:36:02.760571 [debug] [Thread-1 (]: Began executing node model.tst_dbt.zzz_game_details
+[0m08:36:02.803390 [debug] [Thread-1 (]: Writing runtime sql for node "model.tst_dbt.zzz_game_details"
+[0m08:36:02.804391 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m08:36:02.804391 [debug] [Thread-1 (]: Using databricks connection "model.tst_dbt.zzz_game_details"
+[0m08:36:02.805389 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.zzz_game_details"} */
+
+  
+    
+        create or replace table `main_db`.`zzz_game_details`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      -- Create a table that provides full details for each game, including
+-- the game ID, the home and visiting teams' city names and scores,
+-- the game winner's city name, and the game date.
+
+
+
+-- Step 4 of 4: Replace the visitor team IDs with their city names.
+select
+  game_id,
+  home,
+  t.team_city as visitor,
+  home_score,
+  visitor_score,
+  -- Step 3 of 4: Display the city name for each game's winner.
+  case
+    when
+      home_score > visitor_score
+        then
+          home
+    when
+      visitor_score > home_score
+        then
+          t.team_city
+  end as winner,
+  game_date as date
+from (
+  -- Step 2 of 4: Replace the home team IDs with their actual city names.
+  select
+    game_id,
+    t.team_city as home,
+    home_score,
+    visitor_team_id,
+    visitor_score,
+    game_date
+  from (
+    -- Step 1 of 4: Combine data from various tables (for example, game and team IDs, scores, dates).
+    select
+      g.game_id,
+      go.home_team_id,
+      gs.home_team_score as home_score,
+      go.visitor_team_id,
+      gs.visitor_team_score as visitor_score,
+      g.game_date
+    from
+      main_db.zzz_games as g,
+      main_db.zzz_game_opponents as go,
+      main_db.zzz_game_scores as gs
+    where
+      g.game_id = go.game_id and
+      g.game_id = gs.game_id
+  ) as all_ids,
+    main_db.zzz_teams as t
+  where
+    all_ids.home_team_id = t.team_id
+) as visitor_ids,
+  zzz_teams as t
+where
+  visitor_ids.visitor_team_id = t.team_id
+order by game_date desc
+  
+[0m08:36:02.805389 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m08:36:03.364169 [debug] [Thread-1 (]: Databricks adapter: Error while running:
+/* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.zzz_game_details"} */
+
+  
+    
+        create or replace table `main_db`.`zzz_game_details`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      -- Create a table that provides full details for each game, including
+-- the game ID, the home and visiting teams' city names and scores,
+-- the game winner's city name, and the game date.
+
+
+
+-- Step 4 of 4: Replace the visitor team IDs with their city names.
+select
+  game_id,
+  home,
+  t.team_city as visitor,
+  home_score,
+  visitor_score,
+  -- Step 3 of 4: Display the city name for each game's winner.
+  case
+    when
+      home_score > visitor_score
+        then
+          home
+    when
+      visitor_score > home_score
+        then
+          t.team_city
+  end as winner,
+  game_date as date
+from (
+  -- Step 2 of 4: Replace the home team IDs with their actual city names.
+  select
+    game_id,
+    t.team_city as home,
+    home_score,
+    visitor_team_id,
+    visitor_score,
+    game_date
+  from (
+    -- Step 1 of 4: Combine data from various tables (for example, game and team IDs, scores, dates).
+    select
+      g.game_id,
+      go.home_team_id,
+      gs.home_team_score as home_score,
+      go.visitor_team_id,
+      gs.visitor_team_score as visitor_score,
+      g.game_date
+    from
+      main_db.zzz_games as g,
+      main_db.zzz_game_opponents as go,
+      main_db.zzz_game_scores as gs
+    where
+      g.game_id = go.game_id and
+      g.game_id = gs.game_id
+  ) as all_ids,
+    main_db.zzz_teams as t
+  where
+    all_ids.home_team_id = t.team_id
+) as visitor_ids,
+  zzz_teams as t
+where
+  visitor_ids.visitor_team_id = t.team_id
+order by game_date desc
+  
+[0m08:36:03.364169 [debug] [Thread-1 (]: Databricks adapter: <class 'databricks.sql.exc.ServerOperationError'>: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 71 pos 2
+[0m08:36:03.365171 [debug] [Thread-1 (]: Databricks adapter: diagnostic-info: org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.AnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 71 pos 2
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:591)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.unity.EmptyHandle$.runWith(UCSHandle.scala:124)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:490)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:359)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:149)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:49)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:60)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:337)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:322)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:371)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.spark.sql.AnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 71 pos 2
+	at org.apache.spark.sql.AnalysisException.copy(AnalysisException.scala:111)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:575)
+	... 19 more
+
+[0m08:36:03.365171 [debug] [Thread-1 (]: Databricks adapter: operation-id: b'\xd1x+Z\x11\xc7E\xfe\x90\xbb\xcf\x1d\x1aC\xee\xec'
+[0m08:36:03.366168 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_game_details (execute): 2023-03-27 08:36:02.760571 => 2023-03-27 08:36:03.365171
+[0m08:36:03.366168 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: ROLLBACK
+[0m08:36:03.366168 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m08:36:03.366168 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: Close
+[0m08:36:03.518961 [debug] [Thread-1 (]: Runtime Error in model zzz_game_details (models\zzz_game_details.sql)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 71 pos 2
+[0m08:36:03.518961 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '64c122f6-1111-4d99-9a72-dbcfc977b68c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259823EEE60>]}
+[0m08:36:03.518961 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model main_db.zzz_game_details ................. [[31mERROR[0m in 0.76s]
+[0m08:36:03.520970 [debug] [Thread-1 (]: Finished running node model.tst_dbt.zzz_game_details
+[0m08:36:03.521962 [debug] [Thread-1 (]: Began running node model.tst_dbt.zzz_win_loss_records
+[0m08:36:03.521962 [info ] [Thread-1 (]: 2 of 2 SKIP relation main_db.zzz_win_loss_records .............................. [[33mSKIP[0m]
+[0m08:36:03.521962 [debug] [Thread-1 (]: Finished running node model.tst_dbt.zzz_win_loss_records
+[0m08:36:03.523960 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:36:03.523960 [debug] [MainThread]: On master: ROLLBACK
+[0m08:36:03.523960 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:36:03.711433 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:36:03.712433 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:36:03.713367 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:36:03.713367 [debug] [MainThread]: On master: ROLLBACK
+[0m08:36:03.714450 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:36:03.714450 [debug] [MainThread]: On master: Close
+[0m08:36:03.859349 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:36:03.860349 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m08:36:03.860349 [debug] [MainThread]: Connection 'list_None_main_db' was properly closed.
+[0m08:36:03.860349 [debug] [MainThread]: Connection 'model.tst_dbt.zzz_game_details' was properly closed.
+[0m08:36:03.861348 [info ] [MainThread]: 
+[0m08:36:03.862365 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 2.62 seconds (2.62s).
+[0m08:36:03.863352 [debug] [MainThread]: Command end result
+[0m08:36:03.869356 [info ] [MainThread]: 
+[0m08:36:03.870349 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m08:36:03.870349 [info ] [MainThread]: 
+[0m08:36:03.871349 [error] [MainThread]: [33mRuntime Error in model zzz_game_details (models\zzz_game_details.sql)[0m
+[0m08:36:03.871349 [error] [MainThread]:   [TABLE_OR_VIEW_NOT_FOUND] The table or view `zzz_teams` cannot be found. Verify the spelling and correctness of the schema and catalog.
+[0m08:36:03.871349 [error] [MainThread]:   If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+[0m08:36:03.872349 [error] [MainThread]:   To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS.; line 71 pos 2
+[0m08:36:03.872349 [info ] [MainThread]: 
+[0m08:36:03.872349 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m08:36:03.873348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025982397E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259823930A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259823EDF90>]}
+[0m08:36:03.873348 [debug] [MainThread]: Flushing usage events
+[0m08:36:04.226939 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+
+
+============================== 2023-03-27 08:36:55.770507 | 53e64cce-a48c-4e79-aaa2-e0efe8be19ba ==============================
+[0m08:36:55.770507 [info ] [MainThread]: Running with dbt=1.4.5
+[0m08:36:55.772508 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\M66C186\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['models/zzz_game_details.sql', 'models/zzz_win_loss_records.sql'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:36:55.772508 [debug] [MainThread]: Tracking: tracking
+[0m08:36:55.784509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E113A290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E113A230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E113BB50>]}
+[0m08:36:55.793507 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m08:36:55.845507 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:36:55.846507 [debug] [MainThread]: Partial parsing: updated file: tst_dbt://models\zzz_game_details.sql
+[0m08:36:55.856512 [debug] [MainThread]: 1699: static parser successfully parsed zzz_game_details.sql
+[0m08:36:55.873507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '53e64cce-a48c-4e79-aaa2-e0efe8be19ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E136DBD0>]}
+[0m08:36:55.878500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '53e64cce-a48c-4e79-aaa2-e0efe8be19ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E131A5C0>]}
+[0m08:36:55.879500 [info ] [MainThread]: Found 7 models, 4 tests, 0 snapshots, 0 analyses, 374 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m08:36:55.879500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53e64cce-a48c-4e79-aaa2-e0efe8be19ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8BF5AC520>]}
+[0m08:36:55.881501 [info ] [MainThread]: 
+[0m08:36:55.883507 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:36:55.884500 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m08:36:55.891508 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m08:36:55.892500 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m08:36:55.892500 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:36:56.328379 [debug] [ThreadPool]: SQL status: OK in 0.44 seconds
+[0m08:36:56.333377 [debug] [ThreadPool]: On list_schemas: Close
+[0m08:36:56.493407 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_main_db'
+[0m08:36:56.500407 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m08:36:56.501406 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:36:56.501406 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show tables in `main_db`
+  
+[0m08:36:56.501406 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:36:56.906464 [debug] [ThreadPool]: SQL status: OK in 0.41 seconds
+[0m08:36:56.914404 [debug] [ThreadPool]: Using databricks connection "list_None_main_db"
+[0m08:36:56.914404 [debug] [ThreadPool]: On list_None_main_db: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "connection_name": "list_None_main_db"} */
+show views in `main_db`
+  
+[0m08:36:57.231675 [debug] [ThreadPool]: SQL status: OK in 0.32 seconds
+[0m08:36:57.234601 [debug] [ThreadPool]: On list_None_main_db: ROLLBACK
+[0m08:36:57.234601 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m08:36:57.234601 [debug] [ThreadPool]: On list_None_main_db: Close
+[0m08:36:57.385030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53e64cce-a48c-4e79-aaa2-e0efe8be19ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E139AB30>]}
+[0m08:36:57.385030 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:36:57.386039 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:36:57.386039 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:36:57.387045 [info ] [MainThread]: 
+[0m08:36:57.401047 [debug] [Thread-1 (]: Began running node model.tst_dbt.zzz_game_details
+[0m08:36:57.401047 [info ] [Thread-1 (]: 1 of 2 START sql table model main_db.zzz_game_details .......................... [RUN]
+[0m08:36:57.402029 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.tst_dbt.zzz_game_details'
+[0m08:36:57.402029 [debug] [Thread-1 (]: Began compiling node model.tst_dbt.zzz_game_details
+[0m08:36:57.405037 [debug] [Thread-1 (]: Writing injected SQL for node "model.tst_dbt.zzz_game_details"
+[0m08:36:57.405037 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_game_details (compile): 2023-03-27 08:36:57.403041 => 2023-03-27 08:36:57.405037
+[0m08:36:57.406029 [debug] [Thread-1 (]: Began executing node model.tst_dbt.zzz_game_details
+[0m08:36:57.443593 [debug] [Thread-1 (]: Writing runtime sql for node "model.tst_dbt.zzz_game_details"
+[0m08:36:57.444603 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m08:36:57.444603 [debug] [Thread-1 (]: Using databricks connection "model.tst_dbt.zzz_game_details"
+[0m08:36:57.445599 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.zzz_game_details"} */
+
+  
+    
+        create or replace table `main_db`.`zzz_game_details`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      -- Create a table that provides full details for each game, including
+-- the game ID, the home and visiting teams' city names and scores,
+-- the game winner's city name, and the game date.
+
+
+
+-- Step 4 of 4: Replace the visitor team IDs with their city names.
+select
+  game_id,
+  home,
+  t.team_city as visitor,
+  home_score,
+  visitor_score,
+  -- Step 3 of 4: Display the city name for each game's winner.
+  case
+    when
+      home_score > visitor_score
+        then
+          home
+    when
+      visitor_score > home_score
+        then
+          t.team_city
+  end as winner,
+  game_date as date
+from (
+  -- Step 2 of 4: Replace the home team IDs with their actual city names.
+  select
+    game_id,
+    t.team_city as home,
+    home_score,
+    visitor_team_id,
+    visitor_score,
+    game_date
+  from (
+    -- Step 1 of 4: Combine data from various tables (for example, game and team IDs, scores, dates).
+    select
+      g.game_id,
+      go.home_team_id,
+      gs.home_team_score as home_score,
+      go.visitor_team_id,
+      gs.visitor_team_score as visitor_score,
+      g.game_date
+    from
+      main_db.zzz_games as g,
+      main_db.zzz_game_opponents as go,
+      main_db.zzz_game_scores as gs
+    where
+      g.game_id = go.game_id and
+      g.game_id = gs.game_id
+  ) as all_ids,
+    main_db.zzz_teams as t
+  where
+    all_ids.home_team_id = t.team_id
+) as visitor_ids,
+  main_db.zzz_teams as t
+where
+  visitor_ids.visitor_team_id = t.team_id
+order by game_date desc
+  
+[0m08:36:57.445599 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m08:37:02.794309 [debug] [Thread-1 (]: SQL status: OK in 5.35 seconds
+[0m08:37:02.807307 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_game_details (execute): 2023-03-27 08:36:57.406029 => 2023-03-27 08:37:02.807307
+[0m08:37:02.808299 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: ROLLBACK
+[0m08:37:02.808299 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m08:37:02.808299 [debug] [Thread-1 (]: On model.tst_dbt.zzz_game_details: Close
+[0m08:37:02.974080 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '53e64cce-a48c-4e79-aaa2-e0efe8be19ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E13F2E60>]}
+[0m08:37:02.975076 [info ] [Thread-1 (]: 1 of 2 OK created sql table model main_db.zzz_game_details ..................... [[32mOK[0m in 5.57s]
+[0m08:37:02.976069 [debug] [Thread-1 (]: Finished running node model.tst_dbt.zzz_game_details
+[0m08:37:02.977070 [debug] [Thread-1 (]: Began running node model.tst_dbt.zzz_win_loss_records
+[0m08:37:02.977070 [info ] [Thread-1 (]: 2 of 2 START sql view model main_db.zzz_win_loss_records ....................... [RUN]
+[0m08:37:02.978069 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.tst_dbt.zzz_win_loss_records'
+[0m08:37:02.978069 [debug] [Thread-1 (]: Began compiling node model.tst_dbt.zzz_win_loss_records
+[0m08:37:02.980077 [debug] [Thread-1 (]: Writing injected SQL for node "model.tst_dbt.zzz_win_loss_records"
+[0m08:37:02.981676 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_win_loss_records (compile): 2023-03-27 08:37:02.978069 => 2023-03-27 08:37:02.981676
+[0m08:37:02.981676 [debug] [Thread-1 (]: Began executing node model.tst_dbt.zzz_win_loss_records
+[0m08:37:02.992321 [debug] [Thread-1 (]: Writing runtime sql for node "model.tst_dbt.zzz_win_loss_records"
+[0m08:37:02.993321 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m08:37:02.993321 [debug] [Thread-1 (]: Using databricks connection "model.tst_dbt.zzz_win_loss_records"
+[0m08:37:02.994315 [debug] [Thread-1 (]: On model.tst_dbt.zzz_win_loss_records: /* {"app": "dbt", "dbt_version": "1.4.5", "dbt_databricks_version": "1.4.2", "databricks_sql_connector_version": "2.4.1", "profile_name": "tst_dbt", "target_name": "dev", "node_id": "model.tst_dbt.zzz_win_loss_records"} */
+create or replace view `main_db`.`zzz_win_loss_records`
+  
+  
+  as
+    -- Create a view that summarizes the season's win and loss records by team.
+
+-- Step 2 of 2: Calculate the number of wins and losses for each team.
+select
+  winner as team,
+  count(winner) as wins,
+  -- Each team played in 4 games.
+  (4 - count(winner)) as losses
+from (
+  -- Step 1 of 2: Determine the winner and loser for each game.
+  select
+    game_id,
+    winner,
+    case
+      when
+        home = winner
+          then
+            visitor
+      else
+        home
+    end as loser
+  from `main_db`.`zzz_game_details`
+)
+group by winner
+order by wins desc
+
+[0m08:37:02.994315 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:37:03.642617 [debug] [Thread-1 (]: SQL status: OK in 0.65 seconds
+[0m08:37:03.643624 [debug] [Thread-1 (]: Timing info for model.tst_dbt.zzz_win_loss_records (execute): 2023-03-27 08:37:02.982176 => 2023-03-27 08:37:03.643624
+[0m08:37:03.644564 [debug] [Thread-1 (]: On model.tst_dbt.zzz_win_loss_records: ROLLBACK
+[0m08:37:03.644564 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m08:37:03.644564 [debug] [Thread-1 (]: On model.tst_dbt.zzz_win_loss_records: Close
+[0m08:37:03.832966 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '53e64cce-a48c-4e79-aaa2-e0efe8be19ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E13F3A30>]}
+[0m08:37:03.833836 [info ] [Thread-1 (]: 2 of 2 OK created sql view model main_db.zzz_win_loss_records .................. [[32mOK[0m in 0.85s]
+[0m08:37:03.834839 [debug] [Thread-1 (]: Finished running node model.tst_dbt.zzz_win_loss_records
+[0m08:37:03.835323 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m08:37:03.836361 [debug] [MainThread]: On master: ROLLBACK
+[0m08:37:03.836361 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:37:04.009134 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:37:04.010142 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m08:37:04.011126 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m08:37:04.011126 [debug] [MainThread]: On master: ROLLBACK
+[0m08:37:04.012136 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m08:37:04.012136 [debug] [MainThread]: On master: Close
+[0m08:37:04.178671 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:37:04.179676 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m08:37:04.179676 [debug] [MainThread]: Connection 'list_None_main_db' was properly closed.
+[0m08:37:04.179676 [debug] [MainThread]: Connection 'model.tst_dbt.zzz_win_loss_records' was properly closed.
+[0m08:37:04.180676 [info ] [MainThread]: 
+[0m08:37:04.180676 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 8.30 seconds (8.30s).
+[0m08:37:04.181677 [debug] [MainThread]: Command end result
+[0m08:37:04.188686 [info ] [MainThread]: 
+[0m08:37:04.189676 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:37:04.189676 [info ] [MainThread]: 
+[0m08:37:04.190676 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m08:37:04.190676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8C19A5D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E113BF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A8E1138790>]}
+[0m08:37:04.191675 [debug] [MainThread]: Flushing usage events
+[0m08:37:04.592915 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
