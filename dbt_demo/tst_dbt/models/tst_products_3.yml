@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: products_only_3
+    columns:
+      - name: COLOR
+        tests:
+          - accepted_values:
+              values:
+                - 'black'
+                - 'white'
